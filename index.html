@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> iTextCounter App </title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1> Online App For Text Counter</h1>
+        <p>Check your English text and copy to clipboard with iText and shows Real Time Character Counter.</p>
+        
+        <textarea id="textarea" class="textarea" maxlength="1000" placeholder="Your text write here..."></textarea>
+        
+        <!-- copyTexts() call when click the button -->
+        <button onclick="copyTexts()">Copy Text here</button>
+        
+        <!-- Total and remining counter -->
+        <div class="text__counter">
+            <p>Total Character: <span id="total__char"> 0 </span></p>
+            <p>Remaining Characters: <span id="remaininig__char"> 1000 </span></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
